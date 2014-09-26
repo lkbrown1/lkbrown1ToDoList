@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="caualberta.cs.myreminders.MainActivity" >
+  
+    
+    <item android:id="@+id/addTasks" android:title="Add Tasks" android:onClick="@string/title_activity_list__tasks"></item>
+    <item android:id="@+id/MainMenu" android:title="Main Menu" android:onClick="@string/title_activity_Main_Menu"></item>
+    <item android:id="@+id/EmailTasks" android:title="Email Tasks" android:onClick="@string/title_activity_email"></item>
+   
+</menu>

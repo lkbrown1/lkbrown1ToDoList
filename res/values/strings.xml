@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">lkbrown1ToDoList</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_list__tasks">List_Tasks</string>
+      <string name="title_activity_Main_Menu">Main_Menu</string>
+    <string name="title_activity_email">Email</string>
+    <string name="title_activity_archive">Archive</string>
+
+</resources>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lkbrown1todolist" >
+
+    <TextView
+        android:id="@+id/archivedItemsUnfinishedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/totalArchivedItemsText"
+        android:text="Archived Items Unfinished:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/archivedItemsFinishedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/archivedItemsUnfinishedText"
+        android:layout_alignParentLeft="true"
+        android:text="Archived Items Finished:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/totalArchivedItemsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/archivedItemsFinishedText"
+        android:layout_alignLeft="@+id/archivedItemsFinishedText"
+        android:text="Number of Archived Tasks:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/itemsUnfinishedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/totalArchivedItemsText"
+        android:layout_alignLeft="@+id/totalArchivedItemsText"
+        android:text="Items Not Finished:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/ItemsFinishedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemsUnfinishedText"
+        android:layout_alignLeft="@+id/itemsUnfinishedText"
+        android:text="Items Finished:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+      <ListView
+        android:id="@+id/addList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+
+    
+
+</RelativeLayout>

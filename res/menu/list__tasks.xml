@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lkbrown1todolist" >
+    
+    
+    <item android:id="@+id/MainMenu" android:title="Main Menu" android:onClick="@string/title_activity_Main_Menu"></item>
+    <item android:id="@+id/ArchiveList" android:title="View Archived List" android:onClick="@string/title_activity_archive"></item>
+    <item android:id="@+id/EmailTasks" android:title="Email Tasks" android:onClick="@string/title_activity_email"></item>
+   
+</menu>
