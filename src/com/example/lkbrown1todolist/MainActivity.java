@@ -1,6 +1,5 @@
-package com.example.lkbrown1todolist;
 
-/* MyReminders: Write down all your to-do items and check them off when they are done
+/* lkbrown1ToDoList: Write down all your to-do items and check them off when they are done
 Copyright (C) 2014  Leah Brown lkbrown1@ualberta.ca
 
 This program is free software: you can redistribute it and/or modify
@@ -17,6 +16,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+
+/*Main Activity
+ *Displays Main Screen On Startup. 
+ *Creates Action Bar for Main Screen.  
+ */
+
+package com.example.lkbrown1todolist;
 import java.util.ArrayList;
 
 import android.app.Activity;
@@ -51,6 +57,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
     return true;
 }
 
+//Creates Action Bar
 public void List_Tasks(MenuItem menu){
 	Toast.makeText(this, "Add Tasks", Toast.LENGTH_SHORT).show();
 	Intent intent = new Intent(this, List_Tasks.class);

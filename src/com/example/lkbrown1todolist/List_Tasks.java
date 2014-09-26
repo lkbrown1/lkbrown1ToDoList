@@ -1,3 +1,25 @@
+/* lkbrown1ToDoList: Write down all your to-do items and check them off when they are done
+Copyright (C) 2014  Leah Brown lkbrown1@ualberta.ca
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+ * List Tasks: Creates the Add Task Menu
+ * Adds Tasks To an ListArray
+ * 
+ */
 package com.example.lkbrown1todolist;
 
 
@@ -21,55 +43,57 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class List_Tasks extends Activity  {
-	 //testing
-	 EditText et;
-	 Button b;
-	 ListView lv;
-	 ArrayList<String> al;
-	 ArrayAdapter<String> aa;
+	 //declaring variables
+	 EditText editText; 
+	 Button button;
+	 ListView listView;
+	 ArrayList<String> arrayList;
+	 ArrayAdapter<String> arrayAdapter;
 	 
 	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+	
+		//Creating the List
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_task);
-		 et = (EditText) findViewById(R.id.addTaskTextBox);
-		  b = (Button) findViewById(R.id.addButtonScreen);
-		  lv = (ListView) findViewById(R.id.addList);
-		  al = new ArrayList<String>();//initialize array list
-		  aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, al);
+		 editText = (EditText) findViewById(R.id.addTaskTextBox);
+		  button = (Button) findViewById(R.id.addButtonScreen);
+		  listView = (ListView) findViewById(R.id.addList);
+		  arrayList = new ArrayList<String>();//initialize array list
+		  arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
 		  
-		  lv.setAdapter(aa);
-		  lv.setOnItemClickListener(new OnItemClickListener() {
+		  listView.setAdapter(arrayAdapter);
+		  listView.setOnItemClickListener(new OnItemClickListener() {
+		   
+			  
+		   //adds Task to the List
 		   @Override
 		   public void onItemClick(AdapterView parent, View v, int arg2, long arg3) {
-		    String item = al.get(arg2);
+		    String item = arrayList.get(arg2);
 		    Toast.makeText(getApplicationContext(), item, 0).show();
 		   }
 		  });
-		  b.setOnClickListener(new Button.OnClickListener() {
+		  button.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				String item = et.getText().toString();
-				al.add(item);
-				aa.notifyDataSetChanged();
-             	et.setText("");
+				String item = editText.getText().toString();
+				arrayList.add(item);
+				arrayAdapter.notifyDataSetChanged();
+             	editText.setText("");
              	
-             	String filename = "myfile";// used this line from here to // from  https://developer.android.com/training/basics/data-storage/files.html
-             	FileOutputStream outputStream;
-
-             	
+             // The following code was modified from  https://developer.android.com/training/basics/data-storage/files.html
+             	String filename = "myfile";
+             	FileOutputStream outputStream;           	
              	File file = new File(getFilesDir(), filename); 
-             	
-             	
              	try {
              	  outputStream = openFileOutput(filename, Context.MODE_PRIVATE); 
              	  outputStream.write(item.getBytes()); 
              	  outputStream.close();
              	} catch (Exception e) {
              	  e.printStackTrace();
-             	} //
+             	} 
 				
 			}
 

@@ -1,8 +1,26 @@
+/* lkbrown1ToDoList: Write down all your to-do items and check them off when they are done
+Copyright (C) 2014  Leah Brown lkbrown1@ualberta.ca
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+/*
+ * Email: Creates an Email Screen
+ */
+
 package com.example.lkbrown1todolist;
-
-
-
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +42,8 @@ public class Email extends Activity {
 		getMenuInflater().inflate(R.menu.email, menu);
 		return true;
 	}
+	
+	//Creates the Action Bar
 	
 	public void List_Tasks(MenuItem menu){
 		Toast.makeText(this, "Add Tasks", Toast.LENGTH_SHORT).show();
