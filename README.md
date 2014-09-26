@@ -1,6 +1,6 @@
 lkbrown1ToDoList
 ================
-Name of application:lkbrown1ToDoList 
+Name of application: lkbrown1ToDoList 
 
 Name: Leah Brown
 
