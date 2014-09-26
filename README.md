@@ -1,8 +1,13 @@
 lkbrown1ToDoList
 ================
 Name of application:lkbrown1ToDoList 
+
 Name: Leah Brown
+
+
 Student Id: 1284276
+
+
 CCID: lkbrown1
 
 NOTES:
