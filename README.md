@@ -32,6 +32,11 @@ Collaborations:
 
 I discussed ideas with Ashley Fegan (previous CMPUT 301 student). I have also looked at these sources to obtain ideas:
 
-
+Sources That I read/watched to do Research for this project:
 http://androidallprograms.blogspot.ca/2013/12/android-tutorial-listview-adding-items.html
-http://developer.android.com/guide/topics/data/data-storage.html#filesInternal
+Dr.Hindles Student Picker Videos
+
+Sources I used Code From:
+http://developer.android.com/guide/topics/data/data-storage.html#filesInternal which is liscensed under creative commons. (http://creativecommons.org/licenses/by/2.5/)
+
+
