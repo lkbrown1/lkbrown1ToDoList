@@ -30,7 +30,7 @@ If you are having problems opening the application please change the Project Bui
 
 Collaborations:
 
-I discussed ideas with Ashley Fegan (previous CMPUT 301 student). I have also looked at these sources to obtain ideas:
+I discussed ideas with Ashley Fegan (previous CMPUT 301 student).To Contact please Email adbrown@ualberta.ca. I have also looked at these sources to obtain ideas:
 
 Sources That I read/watched to do Research for this project:
 http://androidallprograms.blogspot.ca/2013/12/android-tutorial-listview-adding-items.html
